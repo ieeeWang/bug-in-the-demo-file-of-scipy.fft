@@ -2,9 +2,8 @@
 The official demo code of scipy.fft has a small bug
 
 ## Quick demo
-The file fft_test1.py used a piece of demo code for implementing FFT using scipy.fft, from the [official document]
-   (https://docs.scipy.org/doc/scipy/reference/tutorial/fft.html#d-discrete-fourier-transforms).
-    But, This demo has a small bug: the f-axis missed the median point of the symmetrical FT spectrum,
+The file fft_test1.py used a piece of demo code for implementing FFT using scipy.fft, from the [official document](https://docs.scipy.org/doc/scipy/reference/tutorial/fft.html#d-discrete-fourier-transforms).
+    But this demo has a small bug: the f-axis (of FT) missed the median point of the symmetrical FT spectrum,
     so that it will not excatly sync to corresponding frequncy, thus yielding a very tiny frequency shift (e.g., ~1/fs Hz) as shown in the plot below.
     The corrected demo code is also included in:
 ```
